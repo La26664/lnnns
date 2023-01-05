@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+        <title>يوم التأسيس</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="you.css">
+    </head>
+    <body>
+       <header>
+        <a  class="logo" >Lana</a>
+        <ul>
+            <li><a href="#sec" class="active">الرئيسية</a></li>
+            <li><a href="#services">نشئتها</a></li>
+            <li><a href="#uuuo">أهدافها</a></li>
+            <li><a href="#baa">للأنضمام معنا</a></li>
+
+        </ul>
+       </header> 
+       <section class="lana">
+        <img src="stars.png" id="star">
+        <img src="11.png.png" id="mood">
+        <h2 id="text" >يوم التأسيس</h2>
+        <a href="#sec" id="btn">معلومات</a>
+        <img src="12.png.png" id="hh">
+       </section>
+       <div class="sec" id="sec">
+        <h2> ماهو يوم التأسيس؟</h2>
+        <p>يوم التأسيس السعودي هو ذكرى تأسيس الدولة السعودية، ويوافق 22 فبراير من كل عام. في 27 يناير 
+            2022 أصدر الملك سلمان بن عبد العزيز آل سعود أمراً ملكياً بأن يكون يوم 22 فبراير من كل عام يوماً لذكرى تأسيس الدولة السعودية،
+             باسم يوم التأسيس، ويصبح إجازة رسمية، ويوافق هذا اليوم تاريخ 30 جمادى الآخرة من عام 1139هـ،
+              بناءً على ما استنتجه المؤرخون وفقاً لمعطيات تاريخية حدثت خلال تلك الفترة وشهدت تولي الإمام محمد بن سعود الحكم في الدرعية والعديد من الإنجازات في عهده.</p>
+              <p>ليتم الاحتفاء بهذه المناسبة لأول مرة وسط احتفالات وفعاليات تعم المملكة وتؤكد على الجذور التاريخية للبلاد.</p>
+              <p>يذكر أن "يوم التأسيس" ليس بديلا لليوم الوطني السعودي الذي تحتفل به المملكة كل عام، ولكن السعودية أرادت من خلال الأمر الملكي الجديد بالاحتفال بيوم التأسيس أن تؤكد اعتزازها بالجذور الراسخة لهذه الدولة الممتدة لثلاثة قرون.</p>
+       </div>
+       <script>
+        let star = document.getElementById('star')
+        let mood = document.getElementById('mood')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let hh = document.getElementById('hh')
+        let header =document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            star.style.left= value * 0.25 + 'px';
+            mood.style.top= value * 0.5 + 'px';
+           hh.style.top= value * 0 + 'px';
+           text.style.marginRight= value * 4 + 'px';
+           btn.style.marginTop= value * 1.5 + 'px';
+           header.style.top= value * 0.5 + 'px';
+        })
+
+       </script>
+       <section class="cards" id="services">
+        <h2 class="title">تطور المملكة العربية السعودية</h2>
+        <div class="con">
+            
+            <div class="card">
+                <div class="icon">
+                    <img src="kksa1.png">
+                </div>
+                <div class="info">                    
+                    <p class="yy">دولةٌ قامت في شبه الجزيرة العربية، بعد الاتفاق الذي تمّ بين الأمير محمد بن سعود والشيخ محمد بن عبد الوهاب، والذي ترتب عليه تكوين وحدةٍ سياسيّةٍ كبيرةٍ</p>
+                    <strong class="uu">
+                        <span>الدولة السعودية الأولى</span>
+                    <a href="https://youtu.be/tmPQeSB4hm0" class="rr">فيديو</a>
+                </strong>
+
+                
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="kksa2.png">
+                </div>
+                <div class="info">                    
+                    <p class="yy">الدولة التي أنشأها تركي بن عبد الله بن محمد آل سعود بعد سقوط الدولة السعودية الأولى في سنة 1233هـ - 1818م، على يد قوات إيالة مصر العثمانية بقيادة إبراهيم محمد علي باشا</p>
+                    <strong class="uu">
+                        <span>الدولة السعودية الثانية</span>
+                    <a href="https://youtu.be/I5aVjQQoeNo" class="rr">فيديو</a>
+                </strong>
+
+                
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="kksa3.png">
+                </div>
+                <div class="info">                    
+                    <p class="yy">وريثة الدولتين السعوديتين: الأولى والثانية، تأسست في (5 شوال 1319 هـ )، على يد الملك عبد العزيز آل سعود والذي تمكن من استعادة مدينة الرياض ليؤسس الدولة السعودية الحديثة والمعاصرة </p>
+                    <strong class="uu">
+                        <span>الدولة السعودية الثالثة</span>
+                    <a href="https://youtu.be/duAv_Sx0An0" class="rr">فيديو</a>
+                </strong>
+
+                
+                </div>
+                
+            </div>
+            
+
+        </div>
+       
+
+       </section>
+       <section class="jj">
+       <div class="ff">
+        <div class="mar" dir="ltr">
+            <img src="back.png" >
+            <img src="hr.jpeg" >
+             <img src="hr1.jpeg" >
+              <img src="hr2.jpeg" >
+               <img src="h3.jpeg" >
+                <img src="hr4.jpeg" >
+        </div>
+        
+
+       </div>
+       <div class="see" id="uuuo">
+        <h2> ما هي أهداف يوم التأسيس؟</h2>
+        <ul>
+            <li>الاعتزاز بالجذور الراسخة للدولة السعودية.</li>
+            <li>الاعتزاز بالارتباط الوثيق بين المواطنين وقادتهم.</li>
+            <li>الاعتزاز بما أرسته الدولة السعودية من الوحدة والاستقرار والأمن.</li>
+            <li>الاعتزاز بصمود الدولة السعودية الأولى والدفاع عنها أمام الأعداء.</li>
+            <li>الاعتزاز باستمرار الدولة السعودية واستعادتها لقوة جذورها وقادتها.</li>
+            <li>الاعتزاز بالوحدة الوطنية للمملكة العربية السعودية التي أرساها الملك عبدالعزيز بن عبدالرحمن الفيصل آل سعود.</li>
+            <li>الاعتزاز بإنجازات الملوك أبناء الملك عبد العزيز في تعزيز البناء والوحدة.</li>
+        </ul>
+       </div>
+    </section>
+    <section class="baa" id="baa">
+    <div class="box">
+        <div class="form">
+            <h2>سجل دخولك</h2>
+            <div class="inputbox">
+                <input type="text" required='required'>
+                <span>الأيميل</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required='required'>
+                <span>كلمة المرور</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">نسيت كلمة المرور</a>
+                <a href="#">إنشاء حساب جديد</a>
+            </div>
+            <input type="submit" value="تسجيل">
+        </div>
+    </div>
+</section>
+    
+    </body>
+</html>
